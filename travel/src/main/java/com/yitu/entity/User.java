@@ -26,6 +26,8 @@ public class User implements Serializable {
                 String name, Date birthday,
                 String sex, String telephone,
                 String email, String status, String code) {
+        int[] a = new int[3];
+
         this.username = username;
         this.password = password;
         this.name = name;
