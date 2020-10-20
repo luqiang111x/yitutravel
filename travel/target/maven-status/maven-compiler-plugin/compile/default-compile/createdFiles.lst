@@ -1,5 +1,11 @@
+com\yitu\entity\Route.class
 com\yitu\service\api\UserService.class
+com\yitu\entity\Category.class
+com\yitu\entity\RouteImg.class
+com\yitu\entity\Seller.class
+com\yitu\entity\ResultInfo.class
 com\yitu\entity\User.class
 com\yitu\mvc\UserController.class
+com\yitu\entity\Favorite.class
 com\yitu\mapper\UserMapper.class
 com\yitu\service\impl\UserServiceImpl.class
