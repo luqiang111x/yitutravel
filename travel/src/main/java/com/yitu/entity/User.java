@@ -8,22 +8,22 @@ import java.util.Date;
  */
 public class User implements Serializable {
 
-    private int uid;
-    private String username;
-    private String password;
-    private String name;
-    private Date birthday;
-    private String sex;
-    private String telephone;
-    private String email;
-    private String status;
-    private String code;
+    private int uid;//用户id
+    private String username;//用户名，账号
+    private String password;//密码
+    private String name;//真实姓名
+    private String birthday;//出生日期
+    private String sex;//男或女
+    private String telephone;//手机号
+    private String email;//邮箱
+    private String status;//激活状态，Y代表激活，N代表未激活
+    private String code;//激活码（要求唯一）
 
     public User() {
     }
 
     public User(String username, String password,
-                String name, Date birthday,
+                String name, String birthday,
                 String sex, String telephone,
                 String email, String status, String code) {
         int[] a = new int[3];
@@ -71,11 +71,11 @@ public class User implements Serializable {
         this.name = name;
     }
 
-    public Date getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
 
